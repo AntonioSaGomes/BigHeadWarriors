@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
@@ -21,12 +22,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     FirebaseAuth mAuth;
     EditText editTextEmail, editTextPassword;
     ProgressBar progressBar;
+    NetworkConnection netConn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        netConn = new NetworkConnection(getApplicationContext());
+        Log.d("hasNet", "checkNet: " + String.valueOf(netConn.internetIsConnected()));
+        Log.d("hasConn","checkConn:" + netConn.isNetworkConnected());
         mAuth = FirebaseAuth.getInstance();
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
@@ -107,4 +111,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+
 }
