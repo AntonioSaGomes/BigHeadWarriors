@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "750399867533",
+    "firebase_url": "https://bigheadwarriors.firebaseio.com",
+    "project_id": "bigheadwarriors",
+    "storage_bucket": "bigheadwarriors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750399867533:android:87c675b236686a43",
+        "android_client_info": {
+          "package_name": "com.bighead3.ua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750399867533-4e33qvkfcho4eelfpi68u5bthj85rjbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD54xzNfK__Tj-laf4E5oqbNnwImGU-uyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750399867533:android:407f3767e19fa1ed",
+        "android_client_info": {
+          "package_name": "com.example.sagomes.bigheadwarriors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750399867533-5orgc8nflcc6u4j42hvn4fl6df3853nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sagomes.bigheadwarriors",
+            "certificate_hash": "b98bae6421e22265d73d495ddee905a2ea5617d6"
+          }
+        },
+        {
+          "client_id": "750399867533-4e33qvkfcho4eelfpi68u5bthj85rjbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD54xzNfK__Tj-laf4E5oqbNnwImGU-uyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750399867533-4e33qvkfcho4eelfpi68u5bthj85rjbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750399867533:android:57b3b7f717da9608",
+        "android_client_info": {
+          "package_name": "com.uabuddies8.BigHeadWarriors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750399867533-4e33qvkfcho4eelfpi68u5bthj85rjbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD54xzNfK__Tj-laf4E5oqbNnwImGU-uyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

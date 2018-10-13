@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BigHeadWarriors</string>
+    <string name="title_activity_game">Game</string>
 </resources>
