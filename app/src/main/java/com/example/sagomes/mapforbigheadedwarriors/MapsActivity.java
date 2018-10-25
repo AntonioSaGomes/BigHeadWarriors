@@ -30,41 +30,57 @@ import com.mapbox.mapboxsdk.plugins.locationlayer.modes.RenderMode;
 
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends AppCompatActivity {
+    private MapView mapView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        Mapbox.getInstance(this, "pk.eyJ1Ijoic2hvd3plbiIsImEiOiJjam43aWEyOHQxM21nM3ZzN2x0OW56MWpwIn0.yW5QDLnbzT3d_c2n3IZodQ");
         setContentView(R.layout.activity_maps);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        mapView = (MapView) findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
     }
 
- /*   @Override
-    public void onMapReady(GoogleMap map) {
-        map.getUiSettings().setCompassEnabled(false);
-        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(39.87266,-4.028275))
-                .zoom(18)
-                .tilt(59f)
-                .bearing(314)
-                .build();
-        map.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        map.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-    }*/
+    @Override
+    public void onStart() {
+        super.onStart();
+        mapView.onStart();
+    }
 
     @Override
-    public void onMapReady(MapboxMap map) {
-        map.getUiSettings().setCompassEnabled(false);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(39.87266,-4.028275))
-                .zoom(18)
-                .tilt(59f)
-                .bearing(314)
-                .build();
-        map.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mapView.onStop();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mapView.onSaveInstanceState(outState);
     }
 }
