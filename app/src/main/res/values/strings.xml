@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MenuForBigHeadedWarriors</string>
+    <string name="title_activity_trading">TradingActivity</string>
 </resources>

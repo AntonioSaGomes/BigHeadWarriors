@@ -1,0 +1,4 @@
+#Thu Oct 25 14:10:57 BST 2018
+base.0=C\:\\AndroidProjects\\MenuForBigHeadedWarriors\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
