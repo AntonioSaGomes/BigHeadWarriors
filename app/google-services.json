@@ -8,37 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:750399867533:android:87c675b236686a43",
-        "android_client_info": {
-          "package_name": "com.bighead3.ua"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "750399867533-4e33qvkfcho4eelfpi68u5bthj85rjbg.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD54xzNfK__Tj-laf4E5oqbNnwImGU-uyU"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:750399867533:android:407f3767e19fa1ed",
         "android_client_info": {
           "package_name": "com.example.sagomes.bigheadwarriors"

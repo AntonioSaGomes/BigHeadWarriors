@@ -70,6 +70,12 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorAccent" />
 
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/buttonGoogleLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.gms.common.SignInButton>
             <TextView
                 android:id="@+id/textViewSignup"
                 android:layout_width="match_parent"
@@ -91,6 +97,5 @@
             android:layout_centerVertical="true"
             android:visibility="gone" />
     </RelativeLayout>
-
 
 </LinearLayout>
